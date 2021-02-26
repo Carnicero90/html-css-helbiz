@@ -32,14 +32,6 @@ footer h4,
     color: white;
 }
 
-.description-image,
-.interactive-phone {
-    text-align: center;
-    display: block;
-    margin: auto;
-    /* Probabilmente ridondante ma rivedo poi */
-}
-
 .padder {
     padding: 15px;
 }
@@ -130,6 +122,8 @@ header a {
 
 .description-image {
     width: 70%;
+    margin: auto;
+    text-align: center;
 }
 
 /* interactive-phone */
@@ -137,6 +131,7 @@ header a {
     background-image: url("../img/HelbizBanner.jpg");
     height: 500px;
     background-size: cover;
+    text-align: center;
 }
 
 .interactive-phone .iphone-cover {
