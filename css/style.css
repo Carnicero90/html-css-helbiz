@@ -25,6 +25,21 @@ a {
     color: inherit;
 }
 
+#head-jumbo,
+.info-box,
+footer h4,
+.random-links {
+    color: white;
+}
+
+.description-image,
+.interactive-phone {
+    text-align: center;
+    display: block;
+    margin: auto;
+    /* Probabilmente ridondante ma rivedo poi */
+}
+
 .padder {
     padding: 15px;
 }
@@ -47,6 +62,10 @@ main .description-text a::after {
     padding-left: 10px;
 }
 
+.line-list li {
+    display: inline-block;
+}
+
 /* END COMMON */
 
 /* HEADER */
@@ -67,7 +86,6 @@ header nav [class*="hidden"] {
 }
 
 header li {
-    display: inline-block;
     padding-left: 10px;
 }
 
@@ -83,14 +101,6 @@ header a {
 #head-jumbo {
     height: 600px;
     background-image: url("../img/hero-bg.jpg");
-    color: white;
-}
-
-
-
-
-.jumbotron li {
-    display: inline-block;
 }
 
 .teaser {
@@ -98,7 +108,6 @@ header a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .apps li {
@@ -106,29 +115,11 @@ header a {
     margin-right: 10px;
 }
 
-.teaser img {}
-
 /* END HEADER */
 
 /* MAIN */
 
 /* transports */
-.transports {
-    text-align: center;
-    padding: 0 30px;
-    margin: auto;
-}
-
-.transports img {
-    max-height: 400px;
-    /* TEST */
-    width: 50%;
-    margin: auto;
-}
-
-
-
-/* description */
 .description {
     background-color: #fafafa;
 }
@@ -137,9 +128,8 @@ header a {
     color: #6493f2;
 }
 
-.description img {
-    display: block;
-
+.description-image {
+    width: 70%;
 }
 
 /* interactive-phone */
@@ -147,7 +137,6 @@ header a {
     background-image: url("../img/HelbizBanner.jpg");
     height: 500px;
     background-size: cover;
-    text-align: center;
 }
 
 .interactive-phone .iphone-cover {
@@ -160,23 +149,15 @@ header a {
 }
 
 /* steps */
-.steps {
-    text-align: center;
-}
 
 .steps .text {
     width: 30%;
     margin: auto;
+    padding-top: 10%;
     /* qua vedere se usare text wrapper o cosa */
 }
 
-.boh {
-    color: white;
-}
-
-.boh .fullscreen {
-    background-position: bottom left;
-    background-size: cover;
+.boh .info-box {
     height: 430px;
 
 }
@@ -185,6 +166,10 @@ header a {
     background-image: url("../img/ScooterHelbiz-2400.jpg");
     padding-left: 60%;
     padding-right: 10%;
+    background-position: bottom left;
+    background-size: cover;
+
+
 }
 
 
@@ -226,13 +211,13 @@ header a {
 
 /* FOOTER */
 footer {
-    color: white;
     background-color: #000000;
     padding-top: 50px;
+    color: #767676;
+
 }
 
 footer nav li {
-    color: #767676;
     padding: 10px 0;
 }
 
@@ -248,15 +233,12 @@ footer nav li {
     font-size: 120%;
 }
 
-.random-links li {
-    display: inline-block;
-    color: white;
-
+.random-links [class*="col"]:last-of-type li {
+    width: calc((100% / 3) - 5px);
 }
 
-.random-links [class*="col"]:last-of-type li {
-    width: 32%;
-    text-align: left;
+.apps {
+    text-align: center;
 }
 
 /* END FOOTER */
