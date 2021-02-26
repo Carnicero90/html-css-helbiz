@@ -152,7 +152,7 @@ header a {
 }
 
 .boh .fullscreen {
-    background-position: bottom right;
+    background-position: bottom left;
     background-size: cover;
     height: 430px;
 
@@ -160,14 +160,18 @@ header a {
 
 #main-spot {
     background-image: url("../img/ScooterHelbiz-2400.jpg");
+    padding-left: 60%;
+    padding-right: 10%;
+    padding-top: 10%;
 
 }
 
+
 #social {
     background-image: url("../img/HelbiZAPP.png");
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 50% 150%;
+    background-position: center bottom;
     background-color: #27333c;
 }
 
@@ -176,6 +180,11 @@ header a {
     background-size: cover;
     background-position: top center;
 
+}
+
+#social,
+#cities {
+    padding-top: 10%;
 }
 
 /* END MAIN */
@@ -195,6 +204,10 @@ header a {
 
     .interactive-phone {
         margin-bottom: 250px;
+    }
+
+    #main-spot {
+        padding: 10% 10%;
     }
 
 }
