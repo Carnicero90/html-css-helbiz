@@ -1,5 +1,9 @@
 /* TESTING */
 
+.text {
+    padding: 30px;
+}
+
 section {
     padding: 20px;
 }
@@ -23,6 +27,13 @@ a {
 
 .padder {
     padding: 15px;
+}
+
+.jumbotron {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom right;
 }
 
 .description-text {
@@ -50,7 +61,7 @@ header nav {
     font-size: 80%;
 }
 
-nav [class*="hidden"] {
+header nav [class*="hidden"] {
     text-align: right;
 
 }
@@ -69,16 +80,14 @@ header a {
     border-left: 1px solid black;
 }
 
-
-.jumbotron {
-    position: relative;
-    /* color: white; */
+#head-jumbo {
     height: 600px;
-    text-align: center;
     background-image: url("../img/hero-bg.jpg");
-    background-size: cover;
-    background-position: bottom right;
+    color: white;
 }
+
+
+
 
 .jumbotron li {
     display: inline-block;
@@ -197,7 +206,7 @@ header a {
 
 #social-jumbo {
     background-image: url("../img/Social-Banner.jpg");
-    height: 500px;
+    height: 400px;
 }
 
 #social-jumbo .teaser {
@@ -205,9 +214,50 @@ header a {
     padding: 40px;
 }
 
+#social-jumbo h2 {
+    font-weight: 400;
+}
+
+#social-jumbo .apps {
+    font-size: 160%;
+}
+
 /* END MAIN */
 
 /* FOOTER */
+footer {
+    color: white;
+    background-color: #000000;
+    padding-top: 50px;
+}
+
+footer nav li {
+    color: #767676;
+    padding: 10px 0;
+}
+
+.random-links {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+    vertical-align: middle;
+
+}
+
+.random-links .icons {
+    font-size: 120%;
+}
+
+.random-links li {
+    display: inline-block;
+    color: white;
+
+}
+
+.random-links [class*="col"]:last-of-type li {
+    width: 32%;
+    text-align: left;
+}
 
 /* END FOOTER */
 
@@ -233,7 +283,7 @@ header a {
 /* lg */
 
 @media screen and (min-width: 992px) {
-    .steps .text {
+    .steps {
         min-height: 250px;
     }
 }
