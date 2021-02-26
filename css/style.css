@@ -1,0 +1,160 @@
+/* TESTING */
+
+section {
+    padding: 20px;
+}
+
+/* non sovrascrivere struttura colonne framework! */
+
+/* COMMON */
+body {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* END COMMON */
+
+/* HEADER */
+nav {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+header nav {
+    padding: 32px;
+    font-size: 80%;
+}
+
+nav [class*="hidden"] {
+    text-align: right;
+
+}
+
+header li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+header a {
+    text-transform: uppercase;
+
+}
+
+.langs li:nth-of-type(1n+2) {
+    border-left: 1px solid black;
+}
+
+
+.jumbotron {
+    position: relative;
+    color: white;
+    height: 600px;
+    text-align: center;
+    background-image: url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.teaser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.teaser img {}
+
+/* END HEADER */
+
+/* MAIN */
+
+/* transports */
+.transports {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.transports img {
+    max-height: 400px;
+    /* TEST */
+    width: 75%;
+}
+
+.transports .padder {
+    padding: 15px;
+}
+
+/* description */
+.description {
+    background-color: #fafafa;
+}
+
+.description a {
+    color: #6493f2;
+    display: block;
+}
+
+.description a::after {
+    content: ">";
+    padding-left: 10px;
+}
+
+/* interactive-phone */
+.interactive-phone {
+    background-image: url("../img/HelbizBanner.jpg");
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+}
+
+.interactive-phone .iphone-cover {
+    position: relative;
+    bottom: -50%;
+}
+
+.interactive-phone img {
+    height: 500px;
+}
+
+/* steps */
+.steps {
+    text-align: center;
+}
+
+.steps .text {
+    width: 30%;
+    margin: auto;
+    /* qua vedere se usare text wrapper o cosa */
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+/* END FOOTER */
+
+/* MEDIA QUERIES */
+
+/* COMMON xs/md */
+
+@media screen and (max-width: 991px) {
+    nav {
+        width: 100%;
+    }
+
+    .interactive-phone {
+        margin-bottom: 250px;
+    }
+
+}
